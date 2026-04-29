@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Настройки уведомлений Windows</title>
+  <meta name="home" content="../../index.html" />
+  <meta name="prev" content="./3-audio-settings.html" />
+  <meta name="next" content="" />
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+
+<body>
+  <main class="content">
+    <article class="page">
+      <header class="page-header">
+        <p class="section">Базовые настройки</p>
+        <h2>Настройки уведомлений Windows</h2>
+      </header>
+
+      <div class="page-body">
+        <p>Уведомления Windows нужны для работы оповещений и подсказок в моей настройке OBS.
+          Такие уведомления появляются, например, в момент начала и завершения записи, при сохранении повтора,
+          а также при использовании разных фишек моей настройки.</p>
+        <video src="../../assets/media/video/windows-notification.mp4" muted autoplay loop></video>
+        <blockquote class="note">
+          <p>Для их работы:</p>
+          <ul>
+            <li>Включите уведомления в <a href="ms-settings:notifications">параметрах Windows</a>;</li>
+            <li>Отключите режим "Не беспокоить";</li>
+            <li>Отключите всё в "Включать режим "Не беспокоить" автоматически";</li>
+            <li>Рекомендую также развернуть верхнюю вкладку "Уведомления" и отключить воспроизведение ими однообразного звука. В моей настройке уже предусмотрены разные звуковые уведомления для записи, повтора и трансляции.</li>
+          </ul>
+        </blockquote>
+        <blockquote class="warning">
+          <p>Важно!</p>
+          Для правильной работы уведомлений поверх игры она должна быть запущена с использованием <a href="https://learn.microsoft.com/ru-ru/windows/win32/direct3ddxgi/dxgi-flip-model">перевернутой модели</a>
+          Если вы отключили <a href="https://learn.microsoft.com/ru-ru/windows-hardware/drivers/display/multiplane-overlay-support">MPO видеокарты</a> при установке драйвера (например, через nvcleanstall) или
+          <a href="https://support.microsoft.com/ru-ru/windows/%D0%BE%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%BE%D0%BA%D0%BE%D0%BD%D0%BD%D1%8B%D1%85-%D0%B8%D0%B3%D1%80-%D0%B2-windows-11-3f006843-2c7e-4ed0-9a5e-f9389e535952">полноэкранную оптимизацию</a>
+          в <a href="ms-settings:display-advancedgraphics">параметрах Windows</a> / <a href="ms-settings:display-advancedgraphics-default">ссылка для 23H2 и старше</a> или в свойствах исполняемого файла игры,
+          то уведомления могут не работать или заметно снижать производительность из-за того что в смешиванием слоёв отображения будет заниматься dwm.exe. В стандартном режиме (если вы ничего не "твикали")
+          смешиванием слоёв рендера для перевернутой модели будет заниматься видеокарта, в обход dwm.exe, что объективно является самым эффективным методом его работы.
+          Подробнее об этом в <a href="https://youtu.be/ITdecD6R0Yw">гайде по Windows 11</a>.
+        </blockquote>
+        <blockquote class="success">
+          <p>Я включил и настроил уведомления Windows, и не выключал перевернутую модель</p>
+          <div class="continue-wrap">
+            <a class="btn-continue" href="./5-hags-settings.html">Продолжить</a>
+          </div>
+        </blockquote>
+      </div>
+
+      <footer class="footer-nav">
+        <a id="nav-prev" class="btn" href="#">Назад</a>
+        <a id="nav-home" class="btn" href="../../index.html">Оглавление</a>
+        <a id="nav-next" class="btn" href="#">Далее</a>
+      </footer>
+    </article>
+  </main>
+
+  <script src="../../assets/js/nav.js"></script>
+</body>
+
+</html>

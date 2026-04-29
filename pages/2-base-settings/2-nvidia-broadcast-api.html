@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Установка Nvidia Broadcast API</title>
+    <meta name="home" content="../../index.html" />
+    <meta name="prev" content="./1-gpu-driver.html" />
+    <meta name="next" content="" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+  <body>
+    <main class="content">
+      <article class="page">
+        <header class="page-header">
+          <p class="section">Базовые настройки</p>
+          <h2>Установка Nvidia Broadcast API</h2>
+        </header>
+
+        <div class="page-body">
+          <p>для продвинутого AI-шумоподавления или AI-эффектов камеры.</p>
+          <blockquote class="warning">
+            <p>Не путайте Nvidia Broadcast API с отдельным приложением Nvidia Broadcast</p>
+            Nvidia Broadcast API не требует установки отдельного одноименного приложения которое всегда будет висеть в фоне, потребляя ресурсы ПК.
+            Nvidia Broadcast API не будет эмулировать отдельную веб-камеру и микрофон, для использования с эффектами в OBS.
+            В OBS уже есть нативная поддержка данных эффектов без сторонних программ.
+            Нужно лишь скачать библиотеки от Nvidia для работы эффектов и они появятся в списке фильтров для источников аудио и видео в OBS.
+          </blockquote>
+          <p>Существует два отдельных загружаемых API:
+            <ul class="guide-list">
+                <li>Аудиоэффекты -- позволяют получить в меню фильтров OBS AI-шумоподавление от Nvidia.</li>
+                <li>Видеоэффекты -- позволяют через фильтр убирать фон веб-камеры с помощью AI.</li>
+            </ul>
+          </p>
+          <p>Чтобы использовать данные эффекты скачайте и установите <a href="https://www.nvidia.com/ru-ru/geforce/broadcasting/broadcast-sdk/resources/">Nvidia Broadcast API</a> для своего поколения видеокарт.</p>
+          <blockquote class="note">
+            <p>Эти эффекты работают на тензерных ядрах вашей видеокарты RTX. А если учесть что для их работы в OBS не нужна запущенная программа Nvidia Broadcast, их влияние на производительность сводится к минимуму!</p>
+          </blockquote>
+          <blockquote class="success">
+            <p>Я прочитал эту страницу и готов продолжать</p>
+            <div class="continue-wrap">
+              <a class="btn-continue" href="./3-audio-settings.html">Продолжить</a>
+            </div>
+          </blockquote>
+        </div>
+
+        <footer class="footer-nav">
+          <a id="nav-prev" class="btn" href="#">Назад</a>
+          <a id="nav-home" class="btn" href="../../index.html">Оглавление</a>
+          <a id="nav-next" class="btn" href="#">Далее</a>
+        </footer>
+      </article>
+    </main>
+
+    <script src="../../assets/js/nav.js"></script>
+  </body>
+</html>

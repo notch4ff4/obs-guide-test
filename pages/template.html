@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Шаблон страницы</title>
+    <meta name="home" content="../index.html" />
+    <meta name="prev" content="" />
+    <meta name="next" content="" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <main class="content">
+      <article class="page">
+        <header class="page-header">
+          <p class="section">Раздел</p>
+          <h2>Заголовок страницы</h2>
+        </header>
+
+        <div class="page-body">
+          <p>Обычный абзац с текстом.</p>
+          <blockquote class="callout">блок для важной информации.</blockquote>
+          <ul class="guide-list">
+            <li>Пункт списка 1</li>
+            <li>Пункт списка 2</li>
+          </ul>
+          <div class="continue-wrap">
+            <a class="btn-continue" href="./next-page.html">Продолжить</a>
+          </div>
+        </div>
+
+        <footer class="footer-nav">
+          <a id="nav-prev" class="btn" href="#">Назад</a>
+          <a id="nav-home" class="btn" href="../index.html">Оглавление</a>
+          <a id="nav-next" class="btn" href="#">Далее</a>
+        </footer>
+      </article>
+    </main>
+
+    <script src="../assets/js/nav.js"></script>
+  </body>
+</html>
